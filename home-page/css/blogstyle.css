@@ -1,17 +1,29 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    background-color: black;
+    border: 2px solid gold;
+    height: 10vw;
+}
+
 .container {
     display: grid;
     color: blue;
-    width: 66vw;
+    width: auto;
     margin: auto;
-    grid-template-columns: 15vw 15vw;
-    grid-template-rows: 25vw 25vw;
+    grid-template-columns: 25vw 25vw;
+    grid-template-rows: 15vw 15vw 15vw 15vw 15vw 15vw 15vw 15vw;
     grid-gap: 25px;
     grid-template-areas: 
-    "top top"
-    "bottomLeft bottomRight";
+    "1L 1R"
+    "2L 2R"
+    "3L 3R"
+    "4L 4R";
     border: 2px solid yellow;
     justify-content: center;
-
+    padding: 15px;
 }
 
 .box {
@@ -23,13 +35,33 @@
 }
 
 #one {
-    grid-area: top;
+    grid-area: 1L;
 }
 
 #two {
-    grid-area: bottomLeft;
+    grid-area: 1R;
 }
 
 #three {
-    grid-area: bottomRight;
+    grid-area: 2L;
+}
+
+#four {
+    grid-area: 2R;
+}
+
+#five {
+    grid-area: 3L;
+}
+
+#six {
+    grid-area: 3R;
+}
+
+#seven {
+    grid-area: 4L;
+}
+
+#eight {
+    grid-area: 4L;
 }
